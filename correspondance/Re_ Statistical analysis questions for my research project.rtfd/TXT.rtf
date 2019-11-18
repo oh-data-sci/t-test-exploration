@@ -1,0 +1,112 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;\red69\green60\blue204;
+\red20\green160\blue194;\red29\green184\blue14;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c0\c0\c0;\cssrgb\c34510\c33725\c83922;
+\cssrgb\c0\c68627\c80392;\cssrgb\c7059\c75294\c5490;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 From: danny berzon <dannyberzon@gmail.com>\
+Subject: Re: Statistical analysis questions for my research project\
+Date: 2019-11-14 at 10:45:11 GMT\
+To: Oskar Holm <oholm@brandwatch.com>\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf2 \
+\pard\pardeftab720\sl260\partightenfactor0
+
+\f2\fs22 \cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 Hi Oskar,\
+\
+That\'92s extremely generous of you.\
+\
+I\'92ve attached some CSVs with the raw data for the following constructs:\
+\
+- Ternary operator vs if Else\
+- Chaining methods vs intermediate variables \
+- Order of if statement (positive or negative case first)\
+\
+These are the raw results before removing any outliers. Please let me know if you need the data with the outliers removed instead.\
+\
+Also I am combining the results for all six exercises.\
+\
+Please let me know if there is any other data you need, or if you have any further queries.\
+\
+Any time after next Friday I would be happy to meet up and buy you a drink.\
+\
+All the best,\
+\
+Daniel\
+\
+\
+\
+\
+\
+\pard\pardeftab720\sl260\partightenfactor0
+\cf4 \strokec4 On 14 Nov 2019, at 10:06, Oskar Holm <oholm@brandwatch.com> wrote:\
+\
+at the office. i will get back to you tonight. for now, let me suggest that you send me a couple of sets of timing measurements. i can do the sampling and gauge the shape/symmetry and variance (it will be quick, using python). my prior suspicion is that the means are gaussian/normally distributed but that the variances are not uniform. if the variances are similar, then great, the t-test stands. if the variances are different, then you just need to make a small change to the t-test and do welch's t-test instead.\
+\
+all the best. \
+\
+ps.\
+i really like numbers.app to work on as a spreadsheet. it is a bit irritating that it lacks a lot of the power of excel but it is so much nicer to work in. \
+\
+--\
+oskar holm\
+senior data scientist\
+oholm@brandwatch.com \
+\
+NEW YORK \'a0\'a0| \'a0\'a0BOSTON \'a0\'a0| \'a0\'a0BRIGHTON \'a0\'a0| \'a0\'a0LONDON \'a0\'a0| \'a0\'a0BERLIN \'a0\'a0| \'a0\'a0STUTTGART \'a0\'a0| \'a0\'a0SINGAPORE \'a0\'a0| \'a0\'a0SYDNEY \'a0\'a0| \'a0\'a0PARIS \
+\
+bold. brilliant. authentic. accountable. connected.\
+\
+\
+\pard\pardeftab720\sl260\partightenfactor0
+\cf5 \strokec5 On 2019-11-14, at 08:17, Daniel van Berzon <dannyberzon@gmail.com> wrote:\
+\
+Hi Oskar,\
+\
+Thank you so much for your responses, they are very thorough and helpful.\
+\
+Thank you for confirming the chi-squared approach. I will definitely go with that for the percentage correct answers.\
+\
+Also, I\'92m sorry I used the wrong terminology concerning the inter-quartile range, but that is the approach I was using to identify outliers. Thank you for confirming that this is a reasonable approach.\
+\
+Your answers concerning the T-Test are really interesting. I haven\'92t been using anything as sophisticated as Python or R for the calculations, I\'92ve been using the t-test function within a numbers spreadsheet.\
+\
+It sounds from what you are saying that the T-test is likely to be valid, but that I should verify this. I\'92m concerned that I probably won\'92t be able to confirm using the process you suggested in time for the conference (especially since I\'92d have to either do it by hand or learn to use one of the languages you suggested). I think I should present the results as preliminary for now, but being clear to caution that the T-Test may not be valid pending further investigation. Does this sound reasonable?\
+\
+You mentioned number of respondents being high. I thought it might be worth explaining more about how the participation worked. There were a total of 545 participants to the overall experiment. There were 11 different experiments each testing a different coding construct (comments, ternary operators, function naming etc). Each coding experiment had 6 different exercises, where each exercise represented a single code snippet pair, one with the construct being measured and one without.\
+\
+So for the example of comments, we wrote six different coding exercises, with each exercise having a version with and without comments.\
+\
+The participant visiting the site would start with a randomly selected experiment, and would be shown six snippets, where three had the construct and three didn\'92t, in a random order. The participant could then chose to do another experiment or leave the site.\
+\
+As a result, for each construct we had participation from around 80 participants, where each participant gave us 6 different measurements.\
+\
+We are treating each of the 6 measurements for each participant as separate data points, since no participant every saw both versions of the same snippet. So as a result each experiment had around 500 data points in total, with 250 for each average that we are comparing.\
+\
+Would 250 this be considered high? Does this way of splitting participants change your assessment of whether a t-test is valid?\
+\
+I really appreciate the time you have taken on getting your head round this experiment. I\'92m doing this in my spare time with no funding, so I can\'92t offer compensation for your efforts, but I am happy to thank you in my presentation if you wish.\
+\
+Thank you so much for you time,\
+\
+Daniel\
+\
+\
+\pard\pardeftab720\sl260\partightenfactor0
+\cf6 \strokec6 On 13 Nov 2019, at 23:57, Oskar Holm <oholm@brandwatch.com> wrote:\
+\
+hi danny. thanks for your message. attached are my thoughts on it. please write me if you you would like further clarification on anything in there.\
+all the best. \
+<PastedGraphic-1.tiff><20191113_stats.pdf>\
+\pard\pardeftab720\sl260\partightenfactor0
+\cf5 \strokec5 \
+\pard\pardeftab720\sl260\partightenfactor0
+\cf4 \strokec4 \
+\pard\pardeftab720\sl260\partightenfactor0
+\cf3 \strokec3 \
+}
