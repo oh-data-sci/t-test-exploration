@@ -1,6 +1,6 @@
 t-test exploration
 ===
-#introduction
+# introduction
 this is a test to check a data set's appropriateness for hypothesis testing via student's t-test. the provided data contain three cases of paired sets of timing measurements. the t-test comparison is to check whether both timing sets *have the same mean*.  it is known that the timing measurements have a skewed, long-tailed (non-gaussian) distribution. however, it is also known that even for strongly non-gaussian distributions their sample means are gaussian in the limit that sample approaches infinity. 
 
 # criteria
